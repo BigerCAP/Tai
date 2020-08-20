@@ -508,9 +508,20 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     color: #5d5d5d;
 }
+ 
+@media (max-width: 768px) {
+    header .logo img {
+        width: 20px;
+        vertical-align: -8px;
+    }
+}  
 @media (min-width: 768px) {
     .col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         padding: 0 10px
+    }
+    header .logo img {
+        width: 25px;
+        vertical-align: -8px;
     }
     #content .main {
         padding-top: 51px;
@@ -713,7 +724,7 @@ input::-webkit-input-placeholder {
 <header>
 <div class="main">
     <h1 class="logo">
-    <a href="goodweb.html">
+    <a href="#main">
     <img src="https://ap.tidb.cc/apple-touch-icon.png">
     <span>TiDB Style</span>
     </a>
@@ -722,6 +733,7 @@ input::-webkit-input-placeholder {
     <nav class="nav">
     <ul>
         <li><a href="http://www.tidb.cc/" target="_blank">www.tidb.cc</a></li>
+        <li><a href="http://ap.tidb.cc/" target="_blank">TiDB-Airplan</a></li>
     </ul>
     </nav>
     <!--便携设备右上角菜单-->
@@ -741,21 +753,21 @@ input::-webkit-input-placeholder {
                 <li><a href="#row-1">开发者</a></li>
                 <li><a href="#row-2">在线学习</a></li>
                 <li><a href="#row-3">TiDB Project</a></li>
+                <li><a href="#row-4">3-RD Project </a></li>
             </ul>
         </div>
     </div>
     <!--内容-->
     <div class="main">
         <div class="container content-box">
-            <!--搜索栏-->
+            <!--搜索栏
             <section class="sousuo">
             <div class="search">
-               <!-- <div class="search-box">
+               <div class="search-box">
                     <button class="search-engine-name" id="search-engine-name">小众搜索</button>
                     <input type="text" id="txt" class="search-input" placeholder="选择引擎，输入关键字，回车/Enter搜索"/>
                     <button class="search-btn" id="search-btn">搜索</button>
                 </div>
-                 搜索引擎 -->
                 <div class="search-engine">
                     <div class="search-engine-head">
                         <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
@@ -764,7 +776,7 @@ input::-webkit-input-placeholder {
                     </ul>
                 </div>
             </div>
-            </section>
+            </section> -->
             <!--导航分类范例1，请根据自己的需求进行修改-->
             <section class="item card-box" id="row-1">
             <div class="container-fluid">
@@ -783,7 +795,7 @@ input::-webkit-input-placeholder {
                         <div class="col-md-3 col-sm-4 col-xs-6">
                             <a href="https://aleiwu.com/" class="card-link" target="_blank">
                             <div class="card-tit">Aylei's</div>
-                            <div class="card-desc">TiDB-operator</div>
+                            <div class="card-desc">TiDB-Operator team</div>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-6">
@@ -799,6 +811,18 @@ input::-webkit-input-placeholder {
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-6">
+                            <a href="https://zz-jason.github.io/" class="card-link" target="_blank">
+                            <div class="card-tit">zz-jason</div>
+                            <div class="card-desc">TiDB core team</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <a href="http://blog.minifish.org/" class="card-link" target="_blank">
+                            <div class="card-tit">minifish</div>
+                            <div class="card-desc">TiDB core team</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
                             <a href="http://dba.tidb.info/" class="card-link" target="_blank">
                             <div class="card-tit"> 我叫聂泽峯，湖南人 </div>
                             <div class="card-desc">一个 TiDB DBA 的运维博客                            </div>
@@ -810,6 +834,7 @@ input::-webkit-input-placeholder {
                             <div class="card-desc">一个 TiDB 售前的自诉</div>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -839,6 +864,18 @@ input::-webkit-input-placeholder {
                             <a href="https://asktug.com/" class="card-link" target="_blank">
                             <div class="card-tit">ASKTUG </div>
                             <div class="card-desc">AskTUG-开源分布式_HTAP_数据库 - TiDB_问答</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <a href="https://zhuanlan.zhihu.com/newsql" class="card-link" target="_blank">
+                            <div class="card-tit">TiDB 后花园</div>
+                            <div class="card-desc">TiDB MKT team</div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <a href="https://zhuanlan.zhihu.com/c_1233779216036597760" class="card-link" target="_blank">
+                            <div class="card-tit">分布式系统之美                            </div>
+                            <div class="card-desc">分布式系统爱好者的后花园                            </div>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-6">
@@ -911,6 +948,55 @@ input::-webkit-input-placeholder {
                     </div>
                 </div>
                 </section>
+                <section class="item card-box" id="row-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="item-tit">
+                                <strong>TiDB Project</strong>
+                            </div>
+                            <!--获取内容列表-->
+                            <div class="clearfix two-list-box">
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="https://prometheus.io/" class="card-link" target="_blank">
+                                    <div class="card-tit">Prometheus</div>
+                                    <div class="card-desc">Power your metrics and alerting with a leading
+                                        open-source monitoring solution.</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="https://grafana.com/" class="card-link" target="_blank">
+                                    <div class="card-tit">Grafana</div>
+                                    <div class="card-desc">Used by thousands of companies to monitor everything from Prometheus & Graphite metrics, logs, applications, power plants, beehives, sourdough starters and custom data sources.  </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="https://kubernetes.io/" class="card-link" target="_blank">
+                                    <div class="card-tit">Kubernetes      </div>
+                                    <div class="card-desc">Automated container deployment, scaling, and management       </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="#" class="card-link" target="_blank">
+                                    <div class="card-tit">虚位以待</div>
+                                    <div class="card-desc">/</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="#" class="card-link" target="_blank">
+                                    <div class="card-tit">虚位以待</div>
+                                    <div class="card-desc">/</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6">
+                                    <a href="#" class="card-link" target="_blank">
+                                    <div class="card-tit">虚位以待</div>
+                                    <div class="card-desc">/</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
             <!--页脚-->
             <footer class="footer">
             <div class="container">
@@ -930,10 +1016,11 @@ input::-webkit-input-placeholder {
         </div>
         <!--内容区域-->
     </div>
+     <!--
     <div id="get-top" title="回到顶部">
         <i class="icon icon-arrow-up"></i>
     </div>
-    
+    -->
     <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     
